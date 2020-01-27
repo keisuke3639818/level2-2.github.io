@@ -1,0 +1,514 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style:normal;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+div#test {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+/*
+========================================
+    基本設定
+=========================================
+ */
+
+body {
+    font-family: "游ゴシック体", sans-serif;
+    color: #333333;
+    background-color: #fff;
+    width: 1080px;
+    margin: 0 auto;
+    height: auto;
+   
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.title-border {
+  display: flex;
+  align-items: center; /* 垂直中心 */
+  justify-content: center; /* 水平中心 */
+}
+.title-border:before, .title-border:after {
+  border-top: 4px solid;
+  color: #109954;
+  content: "";
+  width: 200px; /* 線の長さ */
+}
+.title-border:before {
+  margin-right: 1em; /* 文字の右隣 */
+}
+.title-border:after {
+  margin-left: 1em; /* 文字の左隣 */
+}
+
+/*
+ ========================================
+    レイアウト用
+=========================================
+*/
+
+
+
+/*
+ ========================================
+    ヘッダー
+=========================================
+*/
+header {
+  width: 1080px;
+  height: 70px;
+  background-color: yellow;
+}
+
+.header-logo {
+  padding-top: 18px;
+  padding-bottom: 19px;
+  
+}
+
+.header-right p{
+  
+}
+
+
+
+/* ========================================
+    メイン
+========================================= */
+.container-main {
+  display: flex;
+}
+
+.company {
+  width: 560px;
+  height: 448px;
+  background-color: blue;
+  margin: 80px 0 120px 0;
+}
+
+.company h1 {
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 34px;
+}
+
+.company p {
+  line-height: 27px;
+  padding-bottom: 40px;
+}
+
+.mainimage {
+  width: 560px;
+  height: 448px;
+  background-color: green;
+  margin: 80px 0 120px 0;
+  margin-left: 16px;
+}
+
+.contact {
+  width:166px;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+  display:inline-block;
+  text-align:center;
+  padding: 15px 0;
+  margin-left: 0px;
+  color:#fff !important;
+  background-color:#109954;
+  border-radius:24px;
+  box-shadow: 3px 3px 10px #00000029;
+  float: left;
+  font-family: "游ゴシック体";
+  margin-right: 10px;
+  line-height: 31px;
+}
+
+.document {
+  display: inline-block;
+  max-width: 222px;
+  text-align: left;
+  border: 2px solid #109954;
+  font-size: 18px;
+  color: #109954;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 36px;
+  border-radius: 24px;
+  box-shadow: 3px 3px 10px #00000029;
+  line-height: 31px;
+}
+
+
+
+
+
+/* ========================================
+    SERVICE
+========================================= */
+.container-service {
+  display: flex;
+  justify-content: center;
+}
+
+.service p {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 109px;
+}
+
+
+
+.container-service {
+  text-align: center;
+}
+.service-1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin-right: 100px;
+  margin-bottom: 170px;
+}
+
+.service-2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin-right: 100px;
+}
+
+.service-3 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+.service-1 p {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.service-2 p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.service-3 p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ========================================
+    ABOUT
+========================================= */
+.about p {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.about-wrapper {
+  width: 1080px;
+  height: 806px;
+  background-color: blue;
+}
+
+.text-about1 {
+  width: 450px;
+  height: 248px;
+  background-color: white;
+  float: left;
+  margin-left: 70px;
+  font-size: 15.8px;
+  font-weight: weight;
+  padding-top: 30px;
+}
+
+
+.image-about1 {
+  width: 450px;
+  height: 278px;
+  background-color: yellow;
+  float: right;
+  margin-right: 70px;
+  margin-left: 40px;
+  background: transparent url('img/Frame 2.png') 0% 0% no-repeat padding-box;
+  box-shadow: 0px 11px 20px #00000029;
+  opacity: 1;
+}
+
+.image-about2 {
+  width: 450px;
+  height: 278px;
+  background-color: white;
+  float: right;
+  margin: 100px 0;
+  margin-right: 70px;
+  margin-left: 40px;
+}
+
+
+
+.text-about2 {
+  width: 450px;
+  height: 278px;
+  background-color: yellow;
+  float: left;
+  margin: 100px 0;
+  margin-left: 70px;
+}
+
+.more {
+ width:166px;
+ font-size:18px;
+ font-weight:bold;
+ text-decoration:none;
+ display:inline-block;
+ text-align:center;
+ padding: 15px 0;
+ margin-left: 0px;
+ color:#fff;
+ background-color:#109954;
+ border-radius:24px;
+ box-shadow: 3px 3px 10px #00000029;
+ float: left;
+ font-family: "游ゴシック体";
+ margin-right: 10px;
+ line-height: 31px;
+}
+
+h3.recruit {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 109px;
+  color: #109954;
+  margin-top: 30px;
+}
+
+.recruit p {
+  
+
+}
+
+.clear {
+  clear: both;
+}
+
+/* ========================================
+    NEWS
+========================================= */
+.news-wrapper {
+  justify-content: center;
+}
+
+.container-news {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news p {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.image-icon1 {
+  width: 300px;
+  height: 168px;
+  background-color: #005FFF;
+  margin-left: 40px;
+  margin-right: 34px;
+  margin-bottom: 37px;
+}
+.image-icon2 {
+  width: 300px;
+  height: 168px;
+  background-color: #5507FF;
+  margin-left: 40px;
+  margin-right: 34px;
+  margin-bottom: 37px;
+}
+.image-icon3 {
+  width: 300px;
+  height: 168px;
+  background-color: #FF0461;
+  margin-left: 40px;
+  margin-right: 34px;
+  margin-bottom: 37px;
+}
+.content1 {
+  width: 650px;
+  height: 168px;
+  background-color: yellow;
+  padding-left: 
+}
+.content2 {
+  width: 650px;
+  height: 168px;
+  background-color: yellow;
+}
+.content3 {
+  width: 650px;
+  height: 168px;
+  background-color: yellow;
+}
+
+.time {
+  float: left;
+  padding-top: 18px;
+  padding-right: 28px;
+  font-weight: bold;
+}
+.category1 {
+  display: inline-block;
+    max-width: 101px;
+    text-align: left;
+    border: 2px solid #109954;
+    font-size: 14px;
+    color: #109954;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 23px;
+    margin-top: 20px;
+    margin-left: 28px;
+    border-radius: 24px;
+}
+
+.category2 {
+  display: inline-block;
+    max-width: 101px;
+    text-align: left;
+    border: 2px solid #109954;
+    font-size: 14px;
+    color: #109954;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 23px;
+    margin-top: 20px;
+    border-radius: 24px;
+}
+
+.category3 {
+  display: inline-block;
+    max-width: 101px;
+    text-align: left;
+    border: 2px solid #109954;
+    font-size: 14px;
+    color: #109954;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 23px;
+    margin-top: 20px;
+    border-radius: 24px;
+}
+
+.article1 {
+  padding-bottom: 20px;
+}
+
+.text1 {
+  line-height: 27px;
+}
+
+
+
+
+
+/* ========================================
+    フッター
+========================================= */
+footer p{
+  text-align: center;
+
+}
+
+.footer {
+  width: 100%;
+  height: 135px;
+  background-color: #E8E8E8;
+  margin-top: 100px;
+  
+}
+
+.footer-logo {
+  float: left;
+  padding-top: 25px;
+}
+
+nav {
+  float: right;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+nav ul li {
+  float: left;
+  border-right: 1px solid #333333;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+nav ul li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
