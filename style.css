@@ -341,7 +341,7 @@ header p {
   display: block;
   text-align:center;
   padding: 15px 55px;
-  margin-top: 29px;
+  margin-top: 30px;
   margin-left: 0px;
   color:#fff;
   background-color:#109954;
@@ -355,15 +355,11 @@ h3.recruit {
   font-size: 32px;
   font-weight: bold;
   text-align: left;
-  padding-bottom: 109px;
   color: #109954;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.image-about2 p{
-  vertical-align: top;
-
-}
 
 
 
@@ -525,4 +521,5 @@ nav ul li {
   border-right: none;
   padding-right: 0;
 } */
+
 
