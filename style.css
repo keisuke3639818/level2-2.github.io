@@ -282,7 +282,6 @@ header p {
 .about-wrapper {
   width: 1080px;
   height: 806px;
-  background-color: blue;
 }
 
 .text-about1 {
@@ -311,7 +310,7 @@ header p {
 .image-about2 {
   width: 450px;
   height: 278px;
-  background-color: white;
+ 
   float: right;
   margin: 100px 0;
   margin-right: 70px;
@@ -326,11 +325,12 @@ header p {
 .text-about2 {
   width: 450px;
   height: 278px;
-  background-color: yellow;
+  
   float: left;
   margin: 100px 0;
   margin-left: 70px;
-  
+  box-shadow: 0px 11px 20px #00000029;
+  opacity: 1;
 }
 
 .more {
@@ -387,7 +387,6 @@ h3.recruit {
 .image-icon1 {
   width: 300px;
   height: 168px;
-  background-color: #005FFF;
   margin-left: 40px;
   margin-right: 34px;
   margin-bottom: 37px;
@@ -395,7 +394,6 @@ h3.recruit {
 .image-icon2 {
   width: 300px;
   height: 168px;
-  background-color: #5507FF;
   margin-left: 40px;
   margin-right: 34px;
   margin-bottom: 37px;
@@ -403,7 +401,6 @@ h3.recruit {
 .image-icon3 {
   width: 300px;
   height: 168px;
-  background-color: #FF0461;
   margin-left: 40px;
   margin-right: 34px;
   margin-bottom: 37px;
@@ -432,7 +429,7 @@ h3.recruit {
   font-weight: bold;
 }
 .category1 {
-  display: inline-block;
+  display: inline;
   max-width: 101px;
   text-align: left;
   border: 2px solid #109954;
@@ -442,6 +439,7 @@ h3.recruit {
   font-weight: bold;
   padding: 6px 23px;
   margin-top: 20px;
+  vertical-align: text-bottom;
   border-radius: 24px;
 }
 
@@ -521,5 +519,4 @@ nav ul li {
   border-right: none;
   padding-right: 0;
 } */
-
 
