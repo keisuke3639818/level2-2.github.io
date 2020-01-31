@@ -218,7 +218,7 @@ header p {
   justify-content: center;
 }
 
-.service p {
+.service h2 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
@@ -272,7 +272,7 @@ header p {
 /* ========================================
     ABOUT
 ========================================= */
-.about p {
+.about h2 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
@@ -368,115 +368,54 @@ h3.recruit {
 /* ========================================
     NEWS
 ========================================= */
-.news-wrapper {
-  justify-content: center;
-}
-
-.container-news {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.news p {
+.news h2 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
   padding-bottom: 100px;
 }
 
-.image-icon1 {
-  width: 300px;
-  height: 168px;
+.news-inner {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px 70px;
+}
+
+.news-box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.news-box {
+
+ 
+}
+
+.news-txt {
+  display: flex;
+  
+}
+
+figure {
   margin-left: 40px;
-  margin-right: 34px;
   margin-bottom: 37px;
 }
-.image-icon2 {
-  width: 300px;
-  height: 168px;
-  margin-left: 40px;
-  margin-right: 34px;
-  margin-bottom: 37px;
-}
-.image-icon3 {
-  width: 300px;
-  height: 168px;
-  margin-left: 40px;
-  margin-right: 34px;
-  margin-bottom: 37px;
-}
-.content1 {
-  width: 650px;
-  height: 168px;
-  background-color: yellow;
-  padding-left: 
-}
-.content2 {
-  width: 650px;
-  height: 168px;
-  background-color: yellow;
-}
-.content3 {
-  width: 650px;
-  height: 168px;
-  background-color: yellow;
+
+time {
+  
 }
 
-.time {
-  float: left;
-  padding-top: 18px;
-  padding-right: 28px;
-  font-weight: bold;
-}
-.category1 {
-  display: inline;
-  max-width: 101px;
-  text-align: left;
-  border: 2px solid #109954;
-  font-size: 14px;
-  color: #109954;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 6px 23px;
-  margin-top: 20px;
-  vertical-align: text-bottom;
-  border-radius: 24px;
+.label {
+  
+   
 }
 
-.category2 {
-  display: inline-block;
-    max-width: 101px;
-    text-align: left;
-    border: 2px solid #109954;
-    font-size: 14px;
-    color: #109954;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 6px 23px;
-    margin-top: 20px;
-    border-radius: 24px;
-}
-
-.category3 {
-  display: inline-block;
-    max-width: 101px;
-    text-align: left;
-    border: 2px solid #109954;
-    font-size: 14px;
-    color: #109954;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 6px 23px;
-    margin-top: 20px;
-    border-radius: 24px;
-}
-
-.article1 {
-  padding-bottom: 20px;
-}
-
-.text1 {
-  line-height: 27px;
+.news-text {
+ 
+  
+ 
 }
 
 
@@ -493,7 +432,7 @@ h3.recruit {
   height: 135px;
   background-color: #E8E8E8;
   margin-top: 100px;
-  
+  display: flex;
   
   
 }
@@ -515,9 +454,31 @@ nav ul li {
   flex-direction: row;
 }
 
-/* nav ul li:last-child {
+nav ul li:last-child {
   border-right: none;
   padding-right: 0;
-} */
+}
+
+footer p {
+  text-align: center;
+}
+
+
+.footer-nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer nav ul li {
+  margin-right: 50px;
+}
 
 
