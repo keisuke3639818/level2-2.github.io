@@ -63,7 +63,6 @@ body {
     font-family: "游ゴシック体", sans-serif;
     color: #333333;
     background-color: #fff;
-    width: 1080px;
     margin: 0 auto;
     height: auto;
    
@@ -105,15 +104,17 @@ a {
     ヘッダー
 =========================================
 */
-header {
-  width: 1080px;
-  height: 70px;
 
+header {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
+
 
 
 .header-logo {
@@ -141,14 +142,16 @@ header p {
 /* ========================================
     メイン
 ========================================= */
-.container-main {
+.main-inner {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
 }
 
 .company {
   width: 560px;
   height: 448px;
- 
   margin: 80px 0 120px 0;
 }
 
@@ -167,7 +170,6 @@ header p {
 .mainimage {
   width: 560px;
   height: 448px;
-
   margin: 80px 0 120px 0;
   margin-left: 16px;
 }
@@ -186,7 +188,6 @@ header p {
   background-color:#109954;
   border-radius: 34px;
   box-shadow: 3px 3px 10px #00000029;
-  
   font-family: "游ゴシック体";
   line-height: 31px;
 }
@@ -213,7 +214,8 @@ header p {
 /* ========================================
     SERVICE
 ========================================= */
-.container-service {
+.service-inner {
+  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -227,9 +229,7 @@ header p {
 
 
 
-.container-service {
-  text-align: center;
-}
+
 .service-1 {
   width: 200px;
   height: 200px;
@@ -241,7 +241,6 @@ header p {
 .service-2 {
   width: 200px;
   height: 200px;
- 
   margin-right: 100px;
 }
 
@@ -278,20 +277,26 @@ header p {
   text-align: center;
   padding-bottom: 100px;
 }
-
 .about-wrapper {
-  width: 1080px;
-  height: 806px;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  
+}
+.about-inner {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .text-about1 {
   width: 450px;
   height: 248px;
   background-color: white;
-  float: left;
   margin-left: 70px;
   font-size: 15.8px;
   padding-top: 30px;
+ 
 }
 
 
@@ -299,7 +304,6 @@ header p {
   width: 450px;
   height: 278px;
   background-color: yellow;
-  float: right;
   margin-right: 70px;
   margin-left: 40px;
   background: transparent url('img/Frame 2.png') 0% 0% no-repeat padding-box;
@@ -310,8 +314,6 @@ header p {
 .image-about2 {
   width: 450px;
   height: 278px;
- 
-  float: right;
   margin: 100px 0;
   margin-right: 70px;
   margin-left: 40px;
@@ -325,8 +327,6 @@ header p {
 .text-about2 {
   width: 450px;
   height: 278px;
-  
-  float: left;
   margin: 100px 0;
   margin-left: 70px;
   box-shadow: 0px 11px 20px #00000029;
@@ -392,7 +392,6 @@ h3.recruit {
 
 .news-box {
   border-top: 1px solid #D6D6D6;
-  
   padding-top: 31px;
   display: flex;
 }
@@ -471,12 +470,8 @@ time {
   font-size: 16px;
   font-weight: bold;
   padding: 20px 0;
-
 }
 
-.news-content {
-  
-}
 
 .news-more {
   width:56px;
@@ -518,6 +513,7 @@ time {
 
 .footer-logo {
   padding-top: 25px;
+  padding-left: 100px;
 }
 
 nav {
@@ -529,12 +525,15 @@ nav {
 footer ul {
   display: flex;
 }
+
+ul {
+  padding-right: 99px;
+}
+
 ul li {
   border-right: 1px solid #333333;
   padding-right: 18px;
   padding-left: 18px;
-  
-  
 }
 
 ul li:last-child {
@@ -546,6 +545,9 @@ ul li:last-child {
   text-align: center;
   font-size: 14px;
 }
+
+
+
 
 
 
