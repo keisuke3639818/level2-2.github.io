@@ -508,10 +508,12 @@ time {
   height: 135px;
   background-color: #D6D6D6;
   margin-top: 100px;
+}
+
+.content-wrapper {
   display: flex;
   justify-content: space-between;
-  
-  
+  align-items: center;
 }
 
 .footer-logo {
@@ -524,42 +526,28 @@ nav {
   
 }
 
-nav ul li {
+footer ul {
+  display: flex;
+}
+ul li {
   border-right: 1px solid #333333;
   padding-right: 18px;
   padding-left: 18px;
-  display: flex;
-  flex-direction: row;
+  
   
 }
 
-nav ul li:last-child {
+ul li:last-child {
   border-right: none;
   padding-right: 0;
 }
 
-footer p {
+.copylight p {
   text-align: center;
+  font-size: 14px;
 }
 
-.footer-right {
- 
-}
 
-.footer-nav {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.footer nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.footer nav ul li {
-  margin-right: 50px;
-}
 
