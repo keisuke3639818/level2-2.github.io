@@ -379,7 +379,7 @@ h3.recruit {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px 70px;
+  padding: 0 10px 70px;
 }
 
 .news-box-wrapper {
@@ -388,36 +388,112 @@ h3.recruit {
   
 }
 
+
+
 .news-box {
-
- 
-}
-
-.news-txt {
-  display: flex;
+  border-top: 1px solid #D6D6D6;
   
+  padding-top: 31px;
+  display: flex;
 }
+
+.news-box:last-child {
+  border-bottom: 1px solid #D6D6D6;
+}
+
+.news-left {
+  padding-right: 34px;
+}
+
+
+
 
 figure {
-  margin-left: 40px;
-  margin-bottom: 37px;
+ padding-bottom: 18px;
 }
 
+.time-label {
+  display: flex;
+}
 time {
-  
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.label {
-  
-   
+.label1 {
+ display: inline;
+  max-width: 101px;
+  text-align: left;
+  border: 2px solid #109954;
+  font-size: 14px;
+  color: #109954;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 23px;
+  margin-top: 20px;
+  margin-left: 28px;
+  border-radius: 24px;
 }
+
+.label2 {
+  display: inline;
+   max-width: 101px;
+   text-align: left;
+   border: 2px solid #109954;
+   font-size: 14px;
+   color: #109954;
+   text-decoration: none;
+   font-weight: bold;
+   padding: 6px 23px;
+   margin-top: 20px;
+   margin-left: 10px;
+   border-radius: 24px;
+ }
+
+ .label3 {
+  display: inline;
+   max-width: 101px;
+   text-align: left;
+   border: 2px solid #109954;
+   font-size: 14px;
+   color: #109954;
+   text-decoration: none;
+   font-weight: bold;
+   padding: 6px 23px;
+   margin-top: 20px;
+   margin-left: 19px;
+   border-radius: 24px;
+ }
+ 
+ 
 
 .news-text {
- 
-  
- 
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 0;
+
 }
 
+.news-content {
+  
+}
+
+.news-more {
+  width:56px;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+  display: block;
+  text-align:center;
+  padding: 15px 55px;
+  color:#fff;
+  background-color:#109954;
+  border-radius: 44px;
+  box-shadow: 3px 3px 10px #00000029;
+  font-family: "游ゴシック体";
+  line-height: 31px;
+  margin: 0 auto;
+}
 
 
 
@@ -430,9 +506,10 @@ time {
 .footer {
   width: 100%;
   height: 135px;
-  background-color: #E8E8E8;
+  background-color: #D6D6D6;
   margin-top: 100px;
   display: flex;
+  justify-content: space-between;
   
   
 }
@@ -444,6 +521,7 @@ time {
 nav {
   font-size: 14px;
   margin-top: 50px;
+  
 }
 
 nav ul li {
@@ -452,6 +530,7 @@ nav ul li {
   padding-left: 18px;
   display: flex;
   flex-direction: row;
+  
 }
 
 nav ul li:last-child {
@@ -463,6 +542,9 @@ footer p {
   text-align: center;
 }
 
+.footer-right {
+ 
+}
 
 .footer-nav {
   height: 100px;
@@ -480,5 +562,4 @@ footer p {
 .footer nav ul li {
   margin-right: 50px;
 }
-
 
