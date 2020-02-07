@@ -106,21 +106,27 @@ a {
 */
 
 header {
-  max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
+  
   height: 70px;
-  display: flex;
-  justify-content: space-between;
+  
   align-items: center;
 }
 
+.header-inner {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-block {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 .header-logo {
   padding-top: 18px;
   padding-bottom: 19px;
- 
 }
 
 header p {
@@ -129,6 +135,7 @@ header p {
   text-decoration:none;
   display:block;
   padding: 15px 35px; 
+  margin-top: 11px;
   color:#333333;
   background-color:#ffe000;
   border-radius: 34px;
@@ -150,19 +157,21 @@ header p {
 }
 
 .company {
-  width: 560px;
-  height: 448px;
   margin: 80px 0 120px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.company h1 {
+.company-title {
   font-size: 36px;
   font-weight: bold;
   padding-top: 100px;
   padding-bottom: 34px;
 }
 
-.company p {
+.company-text {
+  font-size: 16px;
+  
   line-height: 27px;
   padding-bottom: 40px;
 }
@@ -214,8 +223,35 @@ header p {
 /* ========================================
     SERVICE
 ========================================= */
+
+.service-title-border {
+  display: flex;
+  align-items: center; /* 垂直中心 */
+  justify-content: center; /* 水平中心 */
+}
+.service-title-border:before, .service-title-border:after {
+  border-top: 4px solid;
+  color: #109954;
+  content: "";
+  width: 200px; /* 線の長さ */
+}
+.service-title-border:before {
+  margin-right: 1em; /* 文字の右隣 */
+}
+.service-title-border:after {
+  margin-left: 1em; /* 文字の左隣 */
+}
+
+
+
+
 .service-inner {
-  text-align: center;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -231,7 +267,7 @@ header p {
 
 
 .service-1 {
-  width: 200px;
+  max-width: 200px;
   height: 200px;
 
   margin-right: 100px;
@@ -239,13 +275,13 @@ header p {
 }
 
 .service-2 {
-  width: 200px;
+  max-width: 200px;
   height: 200px;
   margin-right: 100px;
 }
 
 .service-3 {
-  width: 200px;
+  max-width: 200px;
   height: 200px;
  
 }
@@ -271,47 +307,53 @@ header p {
 /* ========================================
     ABOUT
 ========================================= */
+.about-title-border {
+  display: flex;
+  align-items: center; /* 垂直中心 */
+  justify-content: center; /* 水平中心 */
+}
+.about-title-border:before, .about-title-border:after {
+  border-top: 4px solid;
+  color: #109954;
+  content: "";
+  width: 200px; /* 線の長さ */
+}
+.about-title-border:before {
+  margin-right: 1em; /* 文字の右隣 */
+}
+.about-title-border:after {
+  margin-left: 1em; /* 文字の左隣 */
+}
+
+
 .about h2 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
   padding-bottom: 100px;
 }
-.about-wrapper {
+
+.about-inner {
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  
 }
-.about-inner {
+
+.about-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
-.text-about1 {
+.text1 {
   width: 450px;
   height: 248px;
-  background-color: white;
   margin-left: 70px;
   font-size: 15.8px;
   padding-top: 30px;
- 
 }
 
-
-.image-about1 {
-  width: 450px;
-  height: 278px;
-  background-color: yellow;
-  margin-right: 70px;
-  margin-left: 40px;
-  background: transparent url('img/Frame 2.png') 0% 0% no-repeat padding-box;
-  box-shadow: 0px 11px 20px #00000029;
-  opacity: 1;
-}
-
-.image-about2 {
+.text2 {
   width: 450px;
   height: 278px;
   margin: 100px 0;
@@ -323,8 +365,17 @@ header p {
 }
 
 
+.image-about1 {
+  width: 450px;
+  height: 278px;
+  margin-right: 70px;
+  margin-left: 40px;
+  background: transparent url('img/Frame 2.png') 0% 0% no-repeat padding-box;
+  box-shadow: 0px 11px 20px #00000029;
+  opacity: 1;
+}
 
-.text-about2 {
+.image-about2 {
   width: 450px;
   height: 278px;
   margin: 100px 0;
@@ -368,6 +419,25 @@ h3.recruit {
 /* ========================================
     NEWS
 ========================================= */
+
+.news-title-border {
+  display: flex;
+  align-items: center; /* 垂直中心 */
+  justify-content: center; /* 水平中心 */
+}
+.news-title-border:before, .news-title-border:after {
+  border-top: 4px solid;
+  color: #109954;
+  content: "";
+  width: 200px; /* 線の長さ */
+}
+.news-title-border:before {
+  margin-right: 1em; /* 文字の右隣 */
+}
+.news-title-border:after {
+  margin-left: 1em; /* 文字の左隣 */
+}
+
 .news h2 {
   font-size: 36px;
   font-weight: bold;
@@ -376,7 +446,7 @@ h3.recruit {
 }
 
 .news-inner {
-  width: 1000px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px 70px;
@@ -499,13 +569,13 @@ time {
 
 
 .footer {
-  width: 100%;
+  max-width: 100%;
   height: 135px;
   background-color: #D6D6D6;
   margin-top: 100px;
 }
 
-.content-wrapper {
+.footer-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -548,8 +618,481 @@ ul li:last-child {
 
 
 
+ 
+
+
+
+/* ========================================
+    レスポンシブ
+========================================= */
+/* ========================================
+   タブレット
+========================================= */
 
 
 
 
 
+
+@media screen and (max-width: 768px) {
+  header {
+    
+    height: 70px;
+    
+  }
+
+  .header-recruit {
+
+  }
+
+  .header-block {
+   
+  }
+  
+
+
+
+.main-wrapper {
+  
+}
+  
+  .main-inner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .company {
+    width: 30%;
+  }
+
+  .maintext-block {
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .company-title {
+    order: 2;
+    margin-left: auto;
+    margin-right: auto;
+    width: 47%;
+
+  }
+
+  .company-text  {
+    width: 90%;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .company p {
+    
+  }
+
+.mainbtn-block {
+  display: flex;
+  justify-content: ;
+}
+  .contact {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .document {
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .mainimage-block {
+
+
+  }
+
+  .mainimage img {
+    width: 345px;
+    height: 276px;
+    
+  }
+
+
+
+
+
+
+
+  .service-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-inner {
+    
+  }
+
+  .service-1 {
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+
+  .service-1 p {
+    
+  }
+
+  .service-2 {
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+
+  .service-3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+  }
+
+  .service-1 p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about h2 {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .image-about1 {
+    order: 1;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  .text1 {
+    order: 2;
+    width: 100%;
+  }
+
+  .more {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-about2 {
+    order: 3;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  .text2 {
+    order: 4;
+    width: 100%;
+    
+  }
+.section-top-news {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+  .news-box {
+    flex-direction: column;
+  }
+
+  .news-left {
+    order: 1;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-right {
+    order: 2;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-more {
+   
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .footer {
+    max-width: 100%;
+    height: 289px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e8e8e8;
+    
+  }
+
+  .footer-wrapper {
+   
+  }
+
+  
+
+  footer-logo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+
+/* ========================================
+  スマホ
+========================================= */
+
+@media screen and (max-width: 320px) {
+  header {
+    width: 20%;
+    height: 70px;
+    display: flex;
+  }
+
+  .header-block {
+   
+  }
+  
+
+
+
+.main-wrapper {
+  
+}
+  
+  .main-inner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .company {
+    width: 30%;
+  }
+
+  .maintext-block {
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .company-title {
+    order: 2;
+    margin-left: auto;
+    margin-right: auto;
+    width: 47%;
+
+  }
+
+  .company-text  {
+    width: 90%;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .company p {
+    
+  }
+
+.mainbtn-block {
+  display: flex;
+  justify-content: ;
+}
+  .contact {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .document {
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .mainimage-block {
+
+
+  }
+
+  .mainimage img {
+    width: 345px;
+    height: 276px;
+    
+  }
+
+
+
+
+
+
+
+  .service-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-inner {
+    
+  }
+
+  .service-1 {
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+
+  .service-1 p {
+    
+  }
+
+  .service-2 {
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+
+  .service-3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+  }
+
+  .service-1 p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about h2 {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .image-about1 {
+    order: 1;
+    width: 344px;
+    height: 213px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+
+  .text1 p {
+    order: 2;
+    width: 345px;
+    
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .more {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-about2 {
+    order: 3;
+    width: 344px;
+    height: 213px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text2 {
+    order: 4;
+    width: 100%;
+    
+  }
+.section-top-news {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+  .news-box {
+    flex-direction: column;
+  }
+
+  .news-left {
+    order: 1;
+    
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-right {
+    order: 2;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news-more {
+   
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .footer {
+    max-width: 100%;
+    height: 289px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E8E8E8;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  
+
+  footer-logo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}
