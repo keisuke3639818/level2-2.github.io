@@ -88,7 +88,7 @@ header {
   font-size: 18px;
   font-weight:bold;
   text-decoration:none;
-  display:block;
+  display: inline;
   padding: 15px 35px; 
   color:#333333;
   background-color:#ffe000;
@@ -145,9 +145,9 @@ header {
   font-size:18px;
   font-weight:bold;
   text-decoration:none;
-  display:inline-block;
+  display:inline2;
   text-align:center;
-  padding: 15px 0;
+  padding: 15px 39px;
   margin-left: 0px;
   margin-right: 10px;
   color:#fff;
@@ -159,7 +159,7 @@ header {
 }
 
 .document {
-  display: inline-block;
+  display: inline;
   max-width: 144px;
   text-align: left;
   border: 2px solid #109954;
@@ -190,7 +190,7 @@ header {
   border-top: 4px solid;
   color: #109954;
   content: "";
-  width: 200px; /* 線の長さ */
+  width: 230px; /* 線の長さ */
 }
 .service-title-border:before {
   margin-right: 1em; /* 文字の右隣 */
@@ -271,7 +271,7 @@ header {
   border-top: 4px solid;
   color: #109954;
   content: "";
-  width: 200px; /* 線の長さ */
+  width: 230px; /* 線の長さ */
 }
 .about-title-border:before {
   margin-right: 1em; /* 文字の右隣 */
@@ -337,7 +337,7 @@ header {
   text-decoration:none;
   display: block;
   text-align:center;
-  padding: 15px 55px;
+  padding: 10px 57px;
   margin-top: 20px;
   margin-left: 0px;
   color:#fff;
@@ -361,6 +361,10 @@ h3.recruit {
   max-width: 100%;
   margin-left: 34px;
 }
+.text2 {
+  
+}
+
 .about-content2 {
   line-height: 27px;
   font-size: 16px;
@@ -385,7 +389,7 @@ h3.recruit {
   border-top: 4px solid;
   color: #109954;
   content: "";
-  width: 200px; /* 線の長さ */
+  width: 230px; /* 線の長さ */
 }
 .news-title-border:before {
   margin-right: 1em; /* 文字の右隣 */
@@ -532,7 +536,7 @@ time {
   text-decoration:none;
   display: block;
   text-align:center;
-  padding: 15px 55px;
+  padding: 11px 60px;
   color:#fff;
   background-color:#109954;
   border-radius: 44px;
@@ -678,12 +682,14 @@ ul li:last-child {
   }
 
   .contact {
+    padding: 10px 6px;
     margin-left: auto;
     margin-right: auto;
     
   }
 
   .document {
+    padding: 10px 39px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
