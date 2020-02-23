@@ -233,21 +233,19 @@ header {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  padding-top: 30px;
+  padding: 20px;
 }
 
 .service-2 p {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  padding-top: 30px;
 }
 
 .service-3 p {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  padding-top: 30px;
 }
 
 /* ========================================
@@ -263,8 +261,9 @@ header {
   color: #109954;
   content: "";
   width: 230px; /* 線の長さ */
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
+
 }
 .about-title-border:before {
   margin-right: 1em; /* 文字の右隣 */
@@ -726,18 +725,20 @@ ul li:last-child {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
   
   .service-1 {
     margin-left: auto;
     margin-right: auto;
     width: auto;
+    padding-top: 50px;
     margin-bottom: 50px;
   }
 
-  .service-1 img {
-   
+  
+  .service-2 img {  
+    
   }
 
   
@@ -750,10 +751,11 @@ ul li:last-child {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
+    padding-top: 100px;
     padding-bottom: 80px;
   }
 
- 
+  
 
   .about-inner {
     margin-left: 15px;
