@@ -116,6 +116,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
 }
 
 .company-title {
@@ -247,21 +248,24 @@ header {
 
 
 .service-1 p {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
+  padding-top: 30px;
 }
 
 .service-2 p {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  padding-top: 30px;
 }
 
 .service-3 p {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  padding-top: 30px;
 }
 
 /* ========================================
@@ -277,6 +281,8 @@ header {
   color: #109954;
   content: "";
   width: 230px; /* 線の長さ */
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .about-title-border:before {
   margin-right: 1em; /* 文字の右隣 */
@@ -301,8 +307,7 @@ header {
 
 .wrapper-block1 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  
   margin-bottom: 100px;
   margin-left: 15px;
   margin-right: 15px;
@@ -313,7 +318,7 @@ header {
 .about-content1 {
   line-height: 27px;
   font-size: 16px;
- 
+  padding-top: 23px;
 }
 
 .image-about1 img {
@@ -639,8 +644,8 @@ ul li:last-child {
 
 @media screen and (max-width: 767px) {
   .header-inner {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   
@@ -660,6 +665,10 @@ ul li:last-child {
     display: flex;
     flex-direction: column;
     
+  }
+
+  .main-content {
+
   }
 
   .mainimage {
@@ -767,6 +776,7 @@ ul li:last-child {
   .about-content1 {
     width: 100%;
     height: auto;
+    
 }
 
   .about-text-wrapper2 {
@@ -824,6 +834,10 @@ ul li:last-child {
 
   }
 
+  .news-text {
+    
+  }
+
   .footer {
     width: auto;
     height: 289px;
@@ -863,6 +877,7 @@ ul li:last-child {
 
   }
    
+
   
 
 
