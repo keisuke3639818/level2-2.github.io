@@ -22,23 +22,6 @@ a {
     text-decoration: none;
 }
 
-.title-border {
-  display: flex;
-  align-items: center; /* 垂直中心 */
-  justify-content: center; /* 水平中心 */
-}
-.title-border:before, .title-border:after {
-  border-top: 4px solid;
-  color: #109954;
-  content: "";
-  width: 200px; /* 線の長さ */
-}
-.title-border:before {
-  margin-right: 1em; /* 文字の右隣 */
-}
-.title-border:after {
-  margin-left: 1em; /* 文字の左隣 */
-}
 
 /*
  ========================================
@@ -142,7 +125,6 @@ header {
 .mainimage img {
   width: 560px;
   max-width: 100%;
-  height: 448px;
 }
 
 
@@ -307,7 +289,6 @@ header {
 
 .wrapper-block1 {
   display: flex;
-  
   margin-bottom: 100px;
   margin-left: 15px;
   margin-right: 15px;
@@ -319,6 +300,7 @@ header {
   line-height: 27px;
   font-size: 16px;
   padding-top: 23px;
+  text-align:  left;
 }
 
 .image-about1 img {
@@ -405,7 +387,7 @@ h3.recruit {
   border-top: 4px solid;
   color: #109954;
   content: "";
-  width: 230px; /* 線の長さ */
+  width: 230px; 線の長さ
 }
 .news-title-border:before {
   margin-right: 1em; /* 文字の右隣 */
@@ -442,7 +424,8 @@ h3.recruit {
   padding-top: 31px;
   position: relative;
   z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
-
+  margin-left: 15px; 
+  margin-right: 15px;
 }
 
 .wrapper-news-block a {
@@ -725,6 +708,10 @@ ul li:last-child {
     order: 1;
   }
 
+
+
+
+
   .service-inner {
     margin-left: 15px;
     margin-right: 15px;
@@ -734,36 +721,48 @@ ul li:last-child {
     display: flex;
     flex-direction: column;
   }
+
+  .service h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 80px;
+  }
   
   .service-1 {
     margin-left: auto;
     margin-right: auto;
     width: auto;
-    margin-bottom: 110px;
-  }
-
-  .service-1 p {
-    margin-top: 30px;
     margin-bottom: 50px;
   }
 
-  
-
-
-
-  
-
-
-
-  .wrapper-block1 {
-    display: flex;
-    flex-direction: column;
-    
+  .service-1 img {
+   
   }
+
+  
+
+
+
+  
+
+  .about h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+ 
 
   .about-inner {
     margin-left: 15px;
     margin-right: 15px;
+  }
+
+ .wrapper-block1 {
+    display: flex;
+    flex-direction: column; 
   }
 
   .about-text-wrapper1 {
@@ -776,7 +775,7 @@ ul li:last-child {
   .about-content1 {
     width: 100%;
     height: auto;
-    
+    padding-top: 0;
 }
 
   .about-text-wrapper2 {
@@ -828,10 +827,17 @@ ul li:last-child {
     margin-right: 15px;
   }
 
+  .news h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
   .wrapper-news-block {
     display: flex;
     flex-direction: column;
-
+    border-top: 1px solid #D6D6D6;
   }
 
   .news-text {
