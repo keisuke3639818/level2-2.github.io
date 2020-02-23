@@ -181,10 +181,10 @@ header {
   width: 230px; /* 線の長さ */
 }
 .service-title-border:before {
-  margin-right: 1em; /* 文字の右隣 */
+  margin-right: 17px; 文字の右隣
 }
 .service-title-border:after {
-  margin-left: 1em; /* 文字の左隣 */
+  margin-left: 18px; /* 文字の左隣 */
 }
 
 
@@ -266,10 +266,10 @@ header {
 
 }
 .about-title-border:before {
-  margin-right: 1em; /* 文字の右隣 */
+  margin-right: 16px; /* 文字の右隣 */
 }
 .about-title-border:after {
-  margin-left: 1em; /* 文字の左隣 */
+  margin-left: 16px; /* 文字の左隣 */
 }
 
 
@@ -389,10 +389,10 @@ h3.recruit {
   width: 230px; 線の長さ
 }
 .news-title-border:before {
-  margin-right: 1em; /* 文字の右隣 */
+  margin-right: 16px; /* 文字の右隣 */
 }
 .news-title-border:after {
-  margin-left: 1em; /* 文字の左隣 */
+  margin-left: 16px; /* 文字の左隣 */
 }
 
 .news h2 {
